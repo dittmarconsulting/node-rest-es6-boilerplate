@@ -1,0 +1,19 @@
+{
+	"http" : {
+		"port": 8080
+	},
+	"bodyLimit": "100kb",
+	"cors" : {
+		"origin": "*",
+		"methods": ["GET,HEAD,PUT,PATCH,POST,DELETE"],
+		"corsHeaders": ["Link, Content-type, Accept, X-Access-Token, X-Key, cache-control"],
+		"preflightContinue" : true
+	},
+	"logger" : {
+		"level" : "error"
+	},
+	"api" : {
+		"version" : "API Version 1",
+		"path" : "/api/v1/"
+	}
+}
