@@ -36,7 +36,7 @@ npm start
 Docker Support
 ------
 ```sh
-cd advanced-express
+cd node-rest-es6-boilerplate
 
 # Build your docker
 docker build -t es6/api-service .
