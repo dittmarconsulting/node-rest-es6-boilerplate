@@ -2,6 +2,7 @@ let app = express()
 import http from 'http'
 import express from 'express'
 import cors from 'cors'
+import helmet from 'helmet'
 import winston from 'winston'
 import logger from 'winston-color'
 import expressWinston from 'express-winston'
@@ -132,6 +133,14 @@ app.use(expressWinston.logger({
       colorize: false, // Color the text and status code, using the Express/morgan color palette (text: gray, status: default green, 3XX cyan, 4XX yellow, 5XX red).
       ignoreRoute: function (req, res) { return false } // optional: allows to skip some log messages based on request and/or response
   }))
+
+  /* --------------------------
+  	HELMET setup
+  --------------------------- */
+
+  // set standard headers
+  // to set specific headers read here: https://github.com/helmetjs/helmet
+  app.use(helmet())
 
 /* --------------------------
 	CORS setup
