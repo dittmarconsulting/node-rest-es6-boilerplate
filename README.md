@@ -7,6 +7,7 @@ This is a straightforward boilerplate for building REST APIs with ES6 and Expres
 - **ES6** support -> [babel](https://babeljs.io)
 - **REST** resources as middleware -> [resource-router-middleware](https://github.com/developit/resource-router-middleware)
 - **CORS** support -> [cors](https://github.com/troygoode/node-cors)
+- **helmet** Helmet helps to secure Express apps by setting various HTTP headers -> [helmet](https://github.com/helmetjs/helmet)
 - **body parsing** ->  [body-parser](https://github.com/expressjs/body-parser)
 - **nconf** -> [nconf](https://github.com/indexzero/nconf)
 - **winston** logger -> [winston](https://github.com/winstonjs/winston)
